@@ -11,9 +11,6 @@ sleep(rand(0,2)); // simulate slow connection
 $name = filter_input(INPUT_GET, "name", FILTER_SANITIZE_STRING);
 $method = filter_input(INPUT_GET, "method", FILTER_SANITIZE_STRING);
 
-echo "<script>alert($name);</script>";
-echo "<script>alert($method);</script>";
-
 if ($name === null || $method === null || $method !== "ASCII" && 
         $method !== "Random" || $name === "") {
     echo "BAD PARAMETERS";
@@ -28,4 +25,3 @@ if ($name === null || $method === null || $method !== "ASCII" &&
         echo $pin % 1000000;
     }
 }
-

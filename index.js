@@ -9,10 +9,6 @@ $(document).ready(function(){
         var method = $("#method").val();
         var errorMessages = [];
         var errors = false
-        // alert("name: " + name + ", method: " + method + ", errorMessages: " + errorMessages +
-        //         ", errors: " + errors);
-
-        //$("#errorDiv").fadeOut(1000);
 
         if(name == ""){
 
@@ -40,10 +36,6 @@ $(document).ready(function(){
                     $("#main").children().prop("disabled", false);
                     $("#pin").html("Hover to get PIN");
                     $("#pin").css("color", "black");
-                    // //document.getElementById("pin").innerHTML = result;
-
-                    // var secondDiv = document.getElementById("pin");
-                    // // secondDiv.addEventListener("mouseover")
 
                     $("#pin").mouseover(function(){
 
@@ -86,8 +78,6 @@ $(document).ready(function(){
                 $(this).html("Your PIN Will Appear Here");
             });
 
-            //$("#errorDiv").fadeOut();
-            //alert("Error");
             var errorMessage = "";
 
             for(var i = 0; i < errorMessages.length; i++)
